@@ -3,10 +3,16 @@ import styled from 'styled-components'
 import data from '../../Data/data.json'
 import Carroussel from "../../components/Carroussel"
 import Tag from "../../components/Tag"
+import RedStar from '../../assets/red-star.svg'
+import GreyStar from '../../assets/grey-star.svg'
+import Rating from "../../components/Rating"
+import DeployingBannerList from "../../components/Collapse"
+import { useNavigate } from "react-router-dom"
+
 
 const AppartWrapper = styled.div`
 width:100%;
-height:812px;
+height:auto;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -34,20 +40,38 @@ flex-wrap:wrap;
 justify-content:flex-start;
 align-items:center;`
 
-const MarkArea = styled.div`
-`
+const MarkArea=styled.div`
+width:92%;
+height:33px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin:10px 0`
 
+const Host = styled.p`
+width:auto;
+height:auto;
+font-size:12px
+`
+const HostPictureProfile=styled.img`
+width:32px;
+height:32px;
+border-radius:50%;
+`
 function Appart() {
+    const navigate = useNavigate()
     const {id}=useParams();
     const appart = data.find(p=>p.id === id)
-    const tags = appart.tags
-   return(<AppartWrapper>
-    <Carroussel image={appart.pictures[0]}/>
+   return(appart?<AppartWrapper>
+    <Carroussel image={appart.pictures}/>
     <AppartTitle>{appart.title}</AppartTitle>
     <AppartLocation>{appart.location}</AppartLocation>
-    <TagArea>{tags&&tags.map((tag, index)=><Tag key={index} tags={tag}/>)}</TagArea>
-    
-   </AppartWrapper>) 
+    <TagArea>{appart.tags&&appart.tags.map((tag, index)=><Tag key={index} tags={tag}/>)}</TagArea>
+    <MarkArea><Rating rating={appart.rating} redstar={RedStar} greystar={GreyStar}/><Host>{appart.host.name}</Host><HostPictureProfile src={appart.host.picture} alt='photo-hôte'/></MarkArea>
+    <DeployingBannerList  title = 'Description' text={appart.description} />
+    <DeployingBannerList  title = 'Equipements' lists={appart.equipments} />
+   </AppartWrapper>:navigate('/')
+   ) 
 }
 
 export default Appart

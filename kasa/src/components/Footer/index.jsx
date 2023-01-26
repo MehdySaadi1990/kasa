@@ -4,7 +4,8 @@ import Logo from '../../assets/footerLogo.svg'
 
 const FooterArea = styled.div`
 width:100%;
-height:200px;
+height:auto;
+padding: 62px 0 62px 0;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -13,7 +14,7 @@ background-color:#000000;
 margin-top:10px;
 `
 const FooterLogo = styled.img`
-width:122px;
+width:50%;
 height:35px;
 `
 const FooterText=styled.p`

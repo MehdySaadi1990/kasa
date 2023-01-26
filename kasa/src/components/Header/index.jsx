@@ -6,14 +6,16 @@ import {Link} from 'react-router-dom'
 
 const Banner = styled.div`
 width:100%;
-height:100px;
+height:auto;
 display:flex;
+justify-content:space-around;
 align-items:center;
+margin:20px 0 20px 0;
 `
 const ImageLogo = styled.img`
 height:45px;
-width:140px;
-padding: 0 10px 10px 10px;
+width:35%;
+padding: 0 10px 10px 20px;
 `
 const NavBar = styled.nav`
 margin-left:auto;
@@ -43,7 +45,7 @@ function Header() {
         <ImageLogo src={Logo} alt="image Logo"/>
         <NavBar>
         <NavLink to='/'>Accueil</NavLink>
-        <NavLink to=''>A propos</NavLink>
+        <NavLink to='/presentation'>A propos</NavLink>
         </NavBar>
     </Banner>)
 }
