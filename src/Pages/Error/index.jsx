@@ -27,6 +27,8 @@ const ErrorMessage=styled.span`
 width:70%;
 margin-bottom:150px;
 font-weight:500;
+display:flex;
+align-items:center;
 @media all and (min-width:768px){
   font-weight: 500;
   font-size: 36px;
@@ -37,6 +39,7 @@ width:70%;
 text-decoration:none;
 color:#FF6060;
 font-weight:500;
+font-weight:14px;
 &:hover{
   text-decoration:underline;
 }

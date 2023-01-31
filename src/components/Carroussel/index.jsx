@@ -7,6 +7,7 @@ const CarrousselImg = styled.div`
     width:92%;
     height:255px;
     border-radius:10px;
+    padding: 0 8px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -16,11 +17,18 @@ ${(props) =>
     background-image:url(${props.$image});
     background-repeat: no-repeat;
     background-size: cover;`
-}`
+};
+@media all and (min-width:768px){
+    height:415px;
+  }`
 const CarrousselArrow = styled.img`
     width:12px;
     height:20px;
-    cursor:pointer
+    cursor:pointer;
+    @media all and (min-width:768px){
+       height:80px;
+       width:47px;
+      }
     `
 
 function Carroussel({image}) {

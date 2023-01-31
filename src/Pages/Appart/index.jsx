@@ -15,6 +15,7 @@ width:100%;
 height:auto;
 display:flex;
 flex-direction:column;
+justify-content:center;
 align-items:center;
 color:#FF6060;
 `
@@ -23,14 +24,20 @@ width:92%;
 font-style: normal;
 font-weight: 500;
 font-size: 18px;
-text-align:left
+text-align:left;
+@media all and (min-width:768px){
+    font-size: 36px;
+  }
 `
 const AppartLocation=styled.span`
 width:92%;
 font-style: normal;
 font-weight: 500;
 font-size: 14px;
-text-align:left
+text-align:left;
+@media all and (min-width:768px){
+    font-size: 18px;
+  }
 `
 const TagArea=styled.div`
 width:92%;
