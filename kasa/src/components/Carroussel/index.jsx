@@ -10,6 +10,7 @@ const CarrousselImg = styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    transition: all 400ms linear;
 ${(props) =>
     props.$image &&`
     background-image:url(${props.$image});

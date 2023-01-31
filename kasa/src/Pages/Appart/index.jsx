@@ -6,8 +6,8 @@ import Tag from "../../components/Tag"
 import RedStar from '../../assets/red-star.svg'
 import GreyStar from '../../assets/grey-star.svg'
 import Rating from "../../components/Rating"
-import DeployingBannerList from "../../components/Collapse"
-import { useNavigate } from "react-router-dom"
+import Collapse from "../../components/Collapse"
+import Error from '../Error'
 
 
 const AppartWrapper = styled.div`
@@ -59,18 +59,20 @@ height:32px;
 border-radius:50%;
 `
 function Appart() {
-    const navigate = useNavigate()
     const {id}=useParams();
     const appart = data.find(p=>p.id === id)
-   return(appart?<AppartWrapper>
+    if(!appart){
+        return <Error/>
+    }
+   return(<AppartWrapper>
     <Carroussel image={appart.pictures}/>
     <AppartTitle>{appart.title}</AppartTitle>
     <AppartLocation>{appart.location}</AppartLocation>
     <TagArea>{appart.tags&&appart.tags.map((tag, index)=><Tag key={index} tags={tag}/>)}</TagArea>
     <MarkArea><Rating rating={appart.rating} redstar={RedStar} greystar={GreyStar}/><Host>{appart.host.name}</Host><HostPictureProfile src={appart.host.picture} alt='photo-hôte'/></MarkArea>
-    <DeployingBannerList  title = 'Description' text={appart.description} />
-    <DeployingBannerList  title = 'Equipements' lists={appart.equipments} />
-   </AppartWrapper>:navigate('/')
+    <Collapse  title = 'Description' text={appart.description} />
+    <Collapse  title = 'Equipements' lists={appart.equipments} />
+   </AppartWrapper>
    ) 
 }
 

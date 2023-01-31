@@ -1,10 +1,9 @@
-import '../../utils/style/Footer.css'
 import styled from 'styled-components'
 import Logo from '../../assets/footerLogo.svg'
 
 const FooterArea = styled.div`
 width:100%;
-height:auto;
+height:209px;
 padding: 62px 0 62px 0;
 display:flex;
 flex-direction:column;
@@ -12,6 +11,7 @@ justify-content:center;
 align-items:center;
 background-color:#000000;
 margin-top:10px;
+
 `
 const FooterLogo = styled.img`
 width:50%;

@@ -16,6 +16,11 @@ ${(props) =>
     background-repeat: no-repeat;
     background-size: cover;`
 }
+@media all and (min-width:768px){
+    height:300px;
+    width:25%;
+    margin:56px 50px;
+  }
 `
 const NameAppart=styled.h2`
 width:60%;
