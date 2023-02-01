@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ImgBanner from '../../assets/bannerImg.png';
 import ImgBannerXL from '../../assets/ImgBannerHome.png'
 import data from '../../Data/data.json';
 import HomeCard from '../../components/HomeCard';
@@ -8,9 +7,10 @@ const apparts = data
 
 const HomeWrapper=styled.div`
 width:100%;
+height:auto;
 display:flex;
 flex-direction:column;
-justify-content:center;
+justify-content:space-around;
 align-items:center;
 `
 
@@ -18,15 +18,14 @@ const HomeBanner = styled.div`
 width:95%;
 height:111px;
 border-radius:10px;
-background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(${ImgBanner});
+background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(${ImgBannerXL});
 background-repeat: no-repeat;
 background-size: cover;
-margin-bottom:43px;
 display:flex;
 align-items:center;
+margin-bottom:10px;
 @media all and (min-width:768px){
   height:223px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(${ImgBannerXL});
   justify-content:center;
 }`
 

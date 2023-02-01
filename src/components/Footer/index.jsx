@@ -1,9 +1,13 @@
+//Construction Footer 
+
+//Importation des éléments à utiliser 
 import styled from 'styled-components'
 import Logo from '../../assets/footerLogo.svg'
 
+//Construction du DOM + CSS via styled-component
 const FooterArea = styled.div`
 width:100%;
-height:209px;
+height:150px;
 padding: 62px 0 62px 0;
 display:flex;
 flex-direction:column;
@@ -24,6 +28,7 @@ height:25px;
 display:flex;
 align-items:flex-end;
 `
+/*Création du composant React Footer qui sera présent sur toute les pages du site */
 function Footer() {
     return(
         <FooterArea>

@@ -1,8 +1,11 @@
+//Construction Header
+
+//Importation des éléments à utiliser 
 import Logo from '../../assets/logo.png'
 import styled from'styled-components'
 import {Link} from 'react-router-dom'
 
-
+//Construction du DOM + CSS via styled-component
 const Banner = styled.div`
 width:100%;
 height:auto;
@@ -18,7 +21,7 @@ padding: 0 10px 10px 20px;
 @media all and (min-width:768px){
     height:68px;
     width:211px;
-    padding: 0 10px 0px 30px;
+    padding: 0 10px 0px 50px;
     }
 `
 const NavBar = styled.nav`
@@ -48,6 +51,8 @@ color:#FF6060;
     text-transform:none;
 }
 `
+/*Création du composant React Header 
+qui sera présent sur toute les pages du site avec une barre de navigation*/
 function Header() {
     return (<Banner>
         <ImageLogo src={Logo} alt="image Logo"/>

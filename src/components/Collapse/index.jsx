@@ -1,7 +1,11 @@
+//Construction des bannières d'informations
+
+//Importation des éléments à utiliser 
 import styled, {keyframes} from "styled-components"
 import arrowDown from '../../assets/down-arrow.svg'
 import { useState } from "react"
 
+//Construction du DOM + CSS via styled-component
 const deploy = keyframes`
 from{
     transform-origin:top;
@@ -15,13 +19,14 @@ to{
 
 
 const DescriptionArea = styled.div`
-    width:92%;
+    width:100%;
     height:auto;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
-    margin-top:10px`
+    margin-top:10px;
+    `
 
 const DescriptionBanner = styled.div`
     width:95%;
@@ -63,12 +68,15 @@ const DescriptionList = styled.div`
 const Text = styled.span`
     font-size:12px;
     `
-
-function DeployingBannerList({title, lists, text}) {
+/*Création du composant React  Collapse utilisant
+ les props title, lists, text , isAppart(pour les collapses de la page Appart)*/
+function DeployingBannerList({title, lists, text, isAppart}) {
+/*Utilisation du state pour gestion des informations à afficher
+ selon si le collapse est ouvert ou non*/
     const [openBanner, setBanner]=useState(true)
     return (openBanner?(
         <DescriptionArea>
-        <DescriptionBanner>
+        <DescriptionBanner $appart={isAppart}>
         {title}
         <Arrow src={arrowDown} alt='fleche-bas' onClick={()=>setBanner(!openBanner)}/>
         </DescriptionBanner>
