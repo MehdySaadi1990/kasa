@@ -1,6 +1,10 @@
+//Construction Page "Error"
+
+//Importation des éléments à utiliser 
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 
+//Construction du DOM + CSS via styled-component
 const ErroMessageArea=styled.div`
 width:100%;
 height:812px;
@@ -49,6 +53,8 @@ font-weight:14px;
   font-size: 18px;
 }
 `
+/*Création de la page "Error"
+Lien de retour vers la page d'accueil */
 function Error() {
     return( <ErroMessageArea>
       <ErrorNumber>404</ErrorNumber>

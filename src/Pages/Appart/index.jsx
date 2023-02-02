@@ -1,3 +1,6 @@
+//Construction Page "Appart"
+
+//Importation des éléments à utiliser 
 import { useParams } from "react-router-dom"
 import styled from 'styled-components'
 import data from '../../Data/data.json'
@@ -9,7 +12,7 @@ import Rating from "../../components/Rating"
 import Collapse from "../../components/Collapse"
 import Error from '../Error'
 
-
+//Construction du DOM + CSS via styled-component
 const AppartWrapper = styled.div`
 width:100%;
 height:auto;
@@ -110,7 +113,9 @@ margin-bottom:50px;
   height:250px;
   flex-direction:row;
 }`
-
+/*Création de la page "Appart"
+Utilisation du UseParams pour récupérer l'ID de l'URL
+Affichage des informations d'un appartement */
 function Appart() {
     const {id}=useParams();
     const appart = data.find(p=>p.id === id)

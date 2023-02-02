@@ -1,10 +1,13 @@
+//Construction Page "Home"
+
+//Importation des éléments à utiliser 
 import styled from 'styled-components';
 import ImgBannerXL from '../../assets/ImgBannerHome.png'
 import data from '../../Data/data.json';
 import HomeCard from '../../components/HomeCard';
-
+//Importation des données apparts
 const apparts = data
-
+//Construction du DOM + CSS via styled-component
 const HomeWrapper=styled.div`
 width:100%;
 height:auto;
@@ -54,6 +57,8 @@ border-radius:25px;
   background-color:#F7F7F7;
 }
 `
+/*Création de la page "Home"
+Utilisation de la methode map et du composant HomeCard pour affichage des cards*/
 function Home() {
   
   return (

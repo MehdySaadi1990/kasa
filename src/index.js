@@ -1,3 +1,6 @@
+//Construction de l'application react
+
+//Importation des éléments à utiliser 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './utils/style/index.css';
@@ -11,12 +14,13 @@ import Error from './Pages/Error';
 import { createGlobalStyle } from 'styled-components'
 import Appart from './Pages/Appart';
 
-
+//Définition d'un style global pour la police de caractère
 const GlobalStyle = createGlobalStyle`
     div {
         font-family: 'Montserrat', sans-serif;
     }
 `
+//Création des différentes routes React avec React Router
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

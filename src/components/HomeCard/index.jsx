@@ -1,6 +1,10 @@
+//Construction HomeCard
+
+//Importation des éléments à utiliser 
 import { Link } from "react-router-dom"
 import styled from "styled-components"
 
+//Construction du DOM + CSS via styled-component
 const Card= styled(Link)`
 width:95%;
 height:200px;
@@ -29,6 +33,8 @@ font-weight:500;
 font-size: 18px;
 padding-left:5px;
 `
+/*Création du composant React HomeCard 
+qui sera présent sur la page d'accueil du site pour présenter les différents appartements*/
 function HomeCard({image, title, link}) {
     return(
         <Card to={link} $image={image}>
