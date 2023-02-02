@@ -63,7 +63,7 @@ function Home() {
       </HomeBanner>
       <CardWrapper>
       {apparts?apparts.map((appart)=>
-      <HomeCard  key={appart.id} image={appart.cover} title={appart.title} link={`/appart/${appart.id}`}/>):null}
+      <HomeCard  key={appart.id} image={appart.cover} title={appart.title} link={`/kasa/appart/${appart.id}`}/>):null}
       </CardWrapper>
     </HomeWrapper>
   );

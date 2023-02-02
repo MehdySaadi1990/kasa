@@ -24,10 +24,10 @@ root.render(
     <GlobalStyle />
     <Header />
     <Routes>
-    <Route index path='/' element={<Home />}/>
-    <Route path='/appart/:id' element={<Appart />}/>
-    <Route path='/about' element={<About />}/>
-    <Route path='*' element={<Error />}/>
+    <Route index path='/kasa' element={<Home />}/>
+    <Route path='/kasa/appart/:id' element={<Appart />}/>
+    <Route path='/kasa/about' element={<About />}/>
+    <Route path='kasa/*' element={<Error />}/>
     </Routes>
     <Footer />
     </Router>

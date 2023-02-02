@@ -57,8 +57,8 @@ function Header() {
     return (<Banner>
         <ImageLogo src={Logo} alt="image Logo"/>
         <NavBar>
-        <NavLink to='/'>Accueil</NavLink>
-        <NavLink to='/about'>A propos</NavLink>
+        <NavLink to='/kasa'>Accueil</NavLink>
+        <NavLink to='/kasa/about'>A propos</NavLink>
         </NavBar>
     </Banner>)
 }

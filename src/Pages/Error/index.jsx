@@ -28,6 +28,7 @@ width:70%;
 margin-bottom:150px;
 font-weight:500;
 display:flex;
+justify-content:center;
 align-items:center;
 @media all and (min-width:768px){
   font-weight: 500;
@@ -52,7 +53,7 @@ function Error() {
     return( <ErroMessageArea>
       <ErrorNumber>404</ErrorNumber>
       <ErrorMessage>Oups! La page que vous demandez n'existe pas.</ErrorMessage>
-      <HomePageReturn to='/'>Retourner sur la page d'accueil</HomePageReturn>
+      <HomePageReturn to='/kasa'>Retourner sur la page d'accueil</HomePageReturn>
     </ErroMessageArea>)
 }
 
