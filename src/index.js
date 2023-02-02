@@ -24,7 +24,7 @@ root.render(
     <GlobalStyle />
     <Header />
     <Routes>
-    <Route index path='/kasa' element={<Home />}/>
+    <Route index path='/' element={<Home />}/>
     <Route path='/appart/:id' element={<Appart />}/>
     <Route path='/about' element={<About />}/>
     <Route path='*' element={<Error />}/>
