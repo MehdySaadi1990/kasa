@@ -70,13 +70,13 @@ align-items:center;
 margin:10px 0;
 @media all and (min-width:768px){
   position:absolute;
-  left:70%;
+  left:75%;
   bottom:40px;
-  width:25%;
+  width:20%;
   height:auto;
   flex-direction:row;
   flex-wrap:wrap;
-  justify-content:flex-end
+  justify-content:flex-end;
 }`
 
 const Host = styled.p`
@@ -109,7 +109,6 @@ margin-bottom:50px;
 @media all and (min-width:768px){
   height:250px;
   flex-direction:row;
-  border:1px solid black
 }`
 
 function Appart() {

@@ -52,7 +52,7 @@ function Error() {
     return( <ErroMessageArea>
       <ErrorNumber>404</ErrorNumber>
       <ErrorMessage>Oups! La page que vous demandez n'existe pas.</ErrorMessage>
-      <HomePageReturn to='/'>Retourner sur la page d'accueil</HomePageReturn>
+      <HomePageReturn to='/kasa'>Retourner sur la page d'accueil</HomePageReturn>
     </ErroMessageArea>)
 }
 
