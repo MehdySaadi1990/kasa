@@ -69,14 +69,14 @@ const Text = styled.span`
     font-size:12px;
     `
 /*Création du composant React  Collapse utilisant
- les props title, lists, text , isAppart(pour les collapses de la page Appart)*/
-function DeployingBannerList({title, lists, text, isAppart}) {
+ les props title, lists, text*/
+function DeployingBannerList({title, lists, text}) {
 /*Utilisation du state pour gestion des informations à afficher
  selon si le collapse est ouvert ou non*/
     const [openBanner, setBanner]=useState(true)
     return (openBanner?(
         <DescriptionArea>
-        <DescriptionBanner $appart={isAppart}>
+        <DescriptionBanner>
         {title}
         <Arrow src={arrowDown} alt='fleche-bas' onClick={()=>setBanner(!openBanner)}/>
         </DescriptionBanner>

@@ -134,8 +134,8 @@ function Appart() {
     <HostPictureProfile src={appart.host.picture} alt='photo-hôte'/>
     </MarkArea>
     <CollapseArea>
-    <Collapse isAppart={true} title = 'Description' text={appart.description} />
-    <Collapse isAppart={true} title = 'Equipements' lists={appart.equipments} />
+    <Collapse title = 'Description' text={appart.description} />
+    <Collapse title = 'Equipements' lists={appart.equipments} />
     </CollapseArea>
     </AppartDescription>
    </AppartWrapper>
