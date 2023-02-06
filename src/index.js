@@ -31,7 +31,7 @@ root.render(
     <Route index path='/kasa' element={<Home />}/>
     <Route path='/kasa/appart/:id' element={<Appart />}/>
     <Route path='/kasa/about' element={<About />}/>
-    <Route path='*' element={<Error />}/>
+    <Route path='/*' element={<Error />}/>
     </Routes>
     <Footer />
     </Router>
