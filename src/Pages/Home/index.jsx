@@ -27,7 +27,7 @@ background-size: cover;
 display:flex;
 align-items:center;
 margin-bottom:10px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   height:223px;
   justify-content:center;
 }`
@@ -38,7 +38,7 @@ color:white;
 font-size:24px;
 font-weight:500;
 padding-left:16px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   font-size:48px;
 }
 `
@@ -49,12 +49,13 @@ flex-direction:column;
 align-items:center;
 justify-content:center;
 border-radius:25px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   width:95%;
   flex-direction:row;
+  justify-content:space-around;
   flex-wrap:wrap;
-  justify-content:flex-start;
   background-color:#F7F7F7;
+  padding:46px 0;
 }
 `
 /*Création de la page "Home"

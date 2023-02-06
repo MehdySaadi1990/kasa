@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const Star = styled.img`
 width:15px;
 height:15px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
     width:30px;
     height:30px;
   }`

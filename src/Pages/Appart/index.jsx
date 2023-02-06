@@ -35,7 +35,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 text-align:left;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   align-self:flex-start;
   width:60%;
   font-size: 36px;
@@ -48,7 +48,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 text-align:left;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
     font-size: 18px;
     width:60%;
   }
@@ -60,7 +60,7 @@ display:flex;
 flex-wrap:wrap;
 justify-content:flex-start;
 align-items:center;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
 
 }`
 
@@ -71,7 +71,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 margin:10px 0;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   position:absolute;
   left:75%;
   bottom:40px;
@@ -87,7 +87,7 @@ width:auto;
 height:auto;
 font-size:12px;
 margin-left:auto;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   font-size:18px;
   order:-1
 }
@@ -97,7 +97,7 @@ width:32px;
 height:32px;
 border-radius:50%;
 margin-left:10px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   width:64px;
   height:64px;
   order:-1
@@ -109,7 +109,7 @@ height:auto;
 display:flex;
 flex-direction:column;
 margin-bottom:50px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   height:250px;
   flex-direction:row;
 }`

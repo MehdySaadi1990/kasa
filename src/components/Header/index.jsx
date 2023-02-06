@@ -18,7 +18,7 @@ const ImageLogo = styled.img`
 height:47px;
 width:145px;
 padding: 0 10px 10px 20px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
     height:68px;
     width:211px;
     padding: 0 10px 0px 50px;
@@ -31,7 +31,7 @@ height:45px;
 display:flex;
 justify-content:space-around;
 align-items:center;
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
     width:30%;
 }` 
 
@@ -46,7 +46,7 @@ color:#FF6060;
 &:hover{
     text-decoration:underline;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
     font-size: 24px;
     text-transform:none;
 }

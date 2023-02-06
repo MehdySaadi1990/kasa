@@ -28,7 +28,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(${ImgBann
 background-size:cover;
 background-repeat: no-repeat;
 margin-bottom:10px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
 background-image:url(${ImgBannerXL});
 border-radius:25px;
 }

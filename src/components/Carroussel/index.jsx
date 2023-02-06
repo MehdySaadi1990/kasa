@@ -10,7 +10,7 @@ import {useState} from "react"
 const CarrousselArea = styled.div`
     width:92%;
     height:255px;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
     height:415px;
   }`
 const CarrousselImg = styled.img`
@@ -19,7 +19,7 @@ const CarrousselImg = styled.img`
     border-radius:10px;
     object-fit:cover;
     z-index:-10000;
-    @media all and (min-width:768px){
+    @media all and (min-width:1024px){
         height:415px;
       }
 `
@@ -30,7 +30,7 @@ const ArrowArea = styled.div`
     height:30px;
     display:flex;
     justify-content:space-between;
-    @media all and (min-width:768px){
+    @media all and (min-width:1024px){
         bottom:60%;
       };
       ${(props)=>props.$nbImg===1&&`
@@ -40,7 +40,7 @@ const CarrousselArrow = styled.img`
     width:12px;
     height:20px;
     cursor:pointer;
-    @media all and (min-width:768px){
+    @media all and (min-width:1024px){
        height:80px;
        width:47px;
       }

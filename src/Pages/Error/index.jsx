@@ -14,7 +14,7 @@ justify-content:center;
 align-items:center;
 color: #FF6060;
 text-align:center;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   height:1024px
 }`
 
@@ -22,7 +22,7 @@ const ErrorNumber=styled.span`
 font-weight:700;
 font-size: 96px;
 line-height: 142.6%;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   font-weight: 700;
   font-size: 288px;
 }
@@ -34,7 +34,7 @@ font-weight:500;
 display:flex;
 justify-content:center;
 align-items:center;
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   font-weight: 500;
   font-size: 36px;
 }
@@ -48,7 +48,7 @@ font-weight:14px;
 &:hover{
   text-decoration:underline;
 }
-@media all and (min-width:768px){
+@media all and (min-width:1024px){
   font-weight: 500;
   font-size: 18px;
 }
